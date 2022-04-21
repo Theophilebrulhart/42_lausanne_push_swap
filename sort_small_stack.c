@@ -6,7 +6,7 @@
 /*   By: tbrulhar <tbrulhar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/13 14:17:41 by theophilebr       #+#    #+#             */
-/*   Updated: 2022/04/07 15:38:00 by tbrulhar         ###   ########.fr       */
+/*   Updated: 2022/04/21 16:20:08 by tbrulhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,4 +119,5 @@ void	sort_small_stack(t_list *list_a, int list_size)
 	if (list_size == 5)
 		sort_5(stack_a, list_size);
 	i = 0;
+	free(stack_a);
 }

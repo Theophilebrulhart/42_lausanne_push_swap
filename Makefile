@@ -17,7 +17,7 @@ GCC            = gcc
 
 RM             = rm -f
 
-CFLAGS         = -Wall -Wextra -Werror
+CFLAGS         = -Wall -Wextra -Werror -g
 
 LBFT_PATH    =     ./libft/
 
@@ -31,6 +31,8 @@ all:         $(NAME)
 $(NAME):     $(OBJS)
 			@$(MAKE) -C $(LBFT_PATH)
 			$(GCC) $(OBJS) $(CFLAGS) -I ${LBFT_PATH} -o $(NAME) $(FRAMLIBS)
+
+re:	fclean $(NAME)
 
 clean:
 			${RM} ${OBJS}
